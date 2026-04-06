@@ -70,7 +70,7 @@ public class LangblyTranslate extends BaseCachedTranslate {
         }
 
         String baseUrl = getBaseUrl();
-        String url = baseUrl + "/v2?key=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8.name());
+        String url = baseUrl + "/language/translate/v2?key=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8.name());
 
         // Build POST parameters (Google v2 compatible)
         Map<String, String> params = new TreeMap<>();
